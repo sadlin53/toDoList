@@ -3,33 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>To Do List</title>
+    <link rel="stylesheet" type="text/css" href="todoList.css">
+
+
 </head>
 <body>
 
-    <h1>Todo list!</h1>
+<div id="app">
+    <h1>todos</h1>
 
-    <div>
-        <button onclick="handlers.toggleAll()">Toggle All</button>
-    </div>
 
-    <div>
+
+    <div class="buttons">
         <button onclick="handlers.addTodo()">Add</button>
         <input id="addTodoTextInput" type="text">
     </div>
 
-    <div>
+    <div class="buttons">
         <button onclick="handlers.changeTodo()">Change Todo</button>
         <input id="changeTodoPositionInput" type="number">
         <input id="changeTodoTextInput" type="text">
     </div>
 
-    <div>
+    <div class="buttons">
+        <button onclick="handlers.toggleAll()">Toggle All</button>
         <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
         <input id="toggleCompletedPositionInput" type="number">
     </div>
 
     <ul>
     </ul>
+</div>
 
     <script type="text/javascript" src="toDoJS.js"></script>
 </body>
