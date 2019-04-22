@@ -89,6 +89,9 @@ let view = {
 
             todoLi.id = position;
             todoLi.textContent = todoTextWithCompletion;
+            
+            todoLi.setAttribute("contentEditable", true);
+
             todoLi.appendChild(this.createDeleteButton());
             todosUl.appendChild(todoLi);
         }, this);
@@ -108,6 +111,7 @@ let view = {
                 handlers.deleteTodo(parseInt(elementClicked.parentNode.id));
             }
         });
+
     }
 };
 
